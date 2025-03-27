@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+void main()
+{
+   int a,b;
+
+   printf("Dame un numero: ");
+   scanf("%i", &a);
+   printf("Dame otro número: ");
+   scanf("%i", &b);
+
+    if (a > b)
+    {
+        printf("\ta (%d) es mayor a b (%d). \n", a, b);
+    }
+    printf("\tEl programa sigue su flujo. \n");
+
+}
