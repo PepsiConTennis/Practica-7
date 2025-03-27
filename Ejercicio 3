@@ -7,11 +7,8 @@ void main()
    int a,b, opcion, res;
    res = 0;
 
-do
+    do
     {
-
-
-
     printf("Elija la opcion que quiera ralizar: \n");
     printf("Elija la opcion que quiera ralizar: \n");
     printf("Presioné 1 para sumar \n");
@@ -63,9 +60,7 @@ do
     default:
         printf("invalido, presioné otra tecla de las opciones \n");
     }
-    
-        
-        while (opcion != 0);
-        {
-        }
+    }
+    while (opcion != 0);
 }
+
