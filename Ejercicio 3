@@ -1,0 +1,71 @@
+
+#include <stdio.h>
+#include <math.h>
+
+void main()
+{
+   int a,b, opcion, res;
+   res = 0;
+
+do
+    {
+
+
+
+    printf("Elija la opcion que quiera ralizar: \n");
+    printf("Elija la opcion que quiera ralizar: \n");
+    printf("Presioné 1 para sumar \n");
+    printf("Presioné 2 para restar \n");
+    printf("Presioné 3 para multiplicar \n");
+    printf("Presioné 4 para dividir \n");
+    printf("Presioné 5 para sacar su raiz \n");
+    printf("Presioné 6 para elevar a un exponente \n");
+    printf("Presioné 0 para finalizar \n");
+    printf("opcion: ");
+    scanf("%d", &opcion);
+    printf("Primer numero: ");
+    scanf("%d", &a);
+    printf("Segundo numero: ");
+    scanf("%d", &b);
+
+    switch (opcion)
+        {
+    case 1:
+        res= (a+b);
+        printf("El suma es igual a: %d\n" ,res);
+        break;
+
+    case 2:
+        res= (a-b);
+        printf("La resta es igual a: %d\n" ,res);
+        break;
+
+    case 3:
+        res= (a*b);
+        printf("La multiplicación es igual a: %d\n" ,res);
+        break;
+
+    case 4:
+        res= (a/b);
+        printf("La división es igual a: %d\n" ,res);
+        break;
+
+    case 5:
+        res= sqrt(a);
+        printf("La raíz es igual a: %d\n" ,res);
+        break;
+
+    case 6:
+        res= pow(a,b);
+        printf("El resultado es igual a: %d\n" ,res);
+        break;
+
+    default:
+        printf("invalido, presioné otra tecla de las opciones \n");
+    }
+    
+        
+        while (opcion != 0);
+        {
+        }
+}
